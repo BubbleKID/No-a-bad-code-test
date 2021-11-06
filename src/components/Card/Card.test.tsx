@@ -7,3 +7,9 @@ test('Card should be rendered', () => {
     let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
 });
+
+test('Card should be rendered if it has documentSize prop', () => {
+    const component = TestRenderer.create(<Card height={200} width={200} documentSize={"100k"}/>);
+    let tree = component.toJSON();
+    expect(tree).toMatchSnapshot();
+});

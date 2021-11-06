@@ -5,9 +5,7 @@ import Home from './containers/Home';
 class MyComponent extends React.Component {
   render() {
     return (
-      <div>
-        <Home/>
-      </div>
+      <Home/>
     );
   }
 }

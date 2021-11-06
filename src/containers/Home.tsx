@@ -18,16 +18,12 @@ export default function Home() {
         }
         fetchItems();
     }, []);
-
-    useEffect(() => {
-        if(items.length > 0) {
-            console.log(items);
-        }
-    }, [items]);
     
     return(
-        <div className="card-container">
-            { items.map(item => <Card key={item.id} {...item} height={280} width={180}/>) }
+        <div className="main-container">
+            <div className="card-container">
+                { items.map(item => <Card key={item.id} {...item} height={280} width={180}/>) }
+            </div>
         </div>
     );
 }

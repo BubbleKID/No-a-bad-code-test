@@ -20,3 +20,36 @@ exports[`Card should be rendered 1`] = `
   />
 </div>
 `;
+
+exports[`Card should be rendered if it has documentSize prop 1`] = `
+<div
+  className="card "
+  style={
+    Object {
+      "height": 200,
+      "width": 200,
+    }
+  }
+>
+  <p
+    className="card-title"
+  >
+    <a />
+  </p>
+  <span
+    className="arrow"
+  />
+  <div
+    className="document-btn"
+  >
+    <span
+      className="document-icon"
+    />
+    <span>
+      PDF(
+      100k
+      )
+    </span>
+  </div>
+</div>
+`;

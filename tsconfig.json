@@ -24,7 +24,7 @@
     "./src/images/*"
   ],
   "exclude": [
-    "src/setupTests.js",
+    "src/setupTests.ts",
     "server.js",
   ]
 }
