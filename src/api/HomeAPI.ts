@@ -1,0 +1,1 @@
+export const ITEM_API_URL = 'http://prototype.dev.carter.digital/fed-test/items.json';
