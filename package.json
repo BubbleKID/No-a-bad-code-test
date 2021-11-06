@@ -9,6 +9,21 @@
     "test": "jest --collect-coverage --updateSnapshot",
     "build": "webpack"
   },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.tsx",
+      "!src/index.tsx"
+    ],
+    "moduleNameMapper": {
+      "\\.(css|sass)$": "identity-obj-proxy",
+      "\\.(svg)$": "<rootDir>/__mocks__/svgrMock.js",
+      "\\.(jpg|ico|jpeg|png)$": "<rootDir>/__mocks__/fileMock.js"
+    },
+    "testEnvironment": "jsdom",
+    "setupFilesAfterEnv": [
+      "./src/setupTests.js"
+    ]
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BubbleKID/No-a-bad-code-test.git"

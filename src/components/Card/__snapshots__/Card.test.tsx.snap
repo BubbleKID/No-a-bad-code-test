@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should be rendered 1`] = `
+<div
+  className="card "
+  style={
+    Object {
+      "height": 200,
+      "width": 200,
+    }
+  }
+>
+  <p
+    className="card-title"
+  >
+    <a />
+  </p>
+  <span
+    className="arrow"
+  />
+</div>
+`;
