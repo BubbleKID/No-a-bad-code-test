@@ -21,13 +21,17 @@ export default function Card(props: Props) {
     props.featured === 'true' ? width = width * 2 + 82 : width;
         
     return (
-      <div className={`card ${props.featured === 'true' ? 'featured' : ''}`} style={{width: width, height: props.height}} >
-        <p className="card-title"><a>{props.title}</a></p>
-        { (props.description && props.featured) && <p className="description">{props.description}</p> }
-        { props.documentSize ? <ArrowDownBtn className="arrow"/> : <ArrowRightBtn className="arrow"/> }
-        { props.documentSize && 
-            <div className="document-btn">
-              <DocumentIcon className="document-icon"/>
+      <div className={`card ${props.featured === 'true' ? 'card--featured' : ''}`} style={{width: width, height: props.height}} >
+        <p className="card__title"><a>{props.title}</a></p>
+        { props.description && props.featured && <p className="card__description">{props.description}</p> }
+        { props.documentSize ? 
+          <div className="card__arrow-container"><ArrowDownBtn className="card__arrow" onClick={() => window.open(props.link, "_blank")}/></div> : 
+          <div className="card__arrow-container"><ArrowRightBtn className="card__arrow" onClick={() => window.open(props.link, "_blank")}/></div>
+        }
+        { 
+          props.documentSize && 
+            <div className="card__document-btn">
+              <DocumentIcon className="card__document-icon"/>
               <span>PDF({props.documentSize})</span>
             </div> 
         }
