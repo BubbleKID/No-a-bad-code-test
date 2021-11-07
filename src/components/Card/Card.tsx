@@ -5,13 +5,11 @@ import { ReactComponent as ArrowRightBtn } from '../../images/svg/arrow-right.sv
 import { ReactComponent as DocumentIcon } from '../../images/svg/document.svg';
 
 interface Props {
-    title?: string,
+    title: string,
     featured?: string,
-    backroundColor?: string,
     height: number,
     width: number,
-    flexGrow?: string,
-    link?: string
+    link: string
     description?: string,
     documentSize?: string
 }

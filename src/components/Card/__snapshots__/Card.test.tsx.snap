@@ -13,7 +13,9 @@ exports[`Card should be rendered 1`] = `
   <p
     className="card__title"
   >
-    <a />
+    <a>
+      title1
+    </a>
   </p>
   <div
     className="card__arrow-container"
@@ -39,7 +41,9 @@ exports[`Card should be rendered if it has documentSize prop 1`] = `
   <p
     className="card__title"
   >
-    <a />
+    <a>
+      title1
+    </a>
   </p>
   <div
     className="card__arrow-container"
