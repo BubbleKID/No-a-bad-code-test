@@ -3,8 +3,8 @@
 <!-- PROJECT SHIELDS -->
 <a href="https://app.travis-ci.com/github/BubbleKID/not-a-bad-code-test.herokuapp.com" alt="Activity">
     <img alt="Building badge" src="https://app.travis-ci.com/BubbleKID/Not-a-bad-code-test.svg?branch=master"></a>    
-<a href="https://codecov.io/gh/BubbleKID/not-a-bad-code-test.herokuapp.com">
-    <img src="https://codecov.io/gh/BubbleKID/Not-a-bad-code-test.herokuapp.com/branch/master/graph/badge.svg?token=60YDH3NGO6"/>
+<a href="https://codecov.io/gh/BubbleKID/Not-a-bad-code-test">
+    <img src="https://codecov.io/gh/BubbleKID/Not-a-bad-code-test/branch/master/graph/badge.svg?token=60YDH3NGO6"/>
 </a>
 
 ### Demo
