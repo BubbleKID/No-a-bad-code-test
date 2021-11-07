@@ -56,11 +56,11 @@ test("should fetch data", async () => {
     });
   
     // first item
-    expect(container.querySelectorAll(".card-title")[0].textContent).toBe(fakeItems.items[0].title);
-    expect(container.querySelectorAll(".description")[0].textContent).toBe(fakeItems.items[0].description);
-    expect(container.querySelectorAll(".featured .card-title")[0].textContent).toBe(fakeItems.items[0].title);
+    expect(container.querySelectorAll(".card__title")[0].textContent).toBe(fakeItems.items[0].title);
+    expect(container.querySelectorAll(".card__description")[0].textContent).toBe(fakeItems.items[0].description);
+    expect(container.querySelectorAll(".card--featured .card__title")[0].textContent).toBe(fakeItems.items[0].title);
     // second item
-    expect(container.querySelectorAll(".card-title")[1].textContent).toBe(fakeItems.items[1].title);
+    expect(container.querySelectorAll(".card__title")[1].textContent).toBe(fakeItems.items[1].title);
 
     delete global.fetch
 });

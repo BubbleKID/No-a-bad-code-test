@@ -11,13 +11,18 @@ exports[`Card should be rendered 1`] = `
   }
 >
   <p
-    className="card-title"
+    className="card__title"
   >
     <a />
   </p>
-  <span
-    className="arrow"
-  />
+  <div
+    className="card__arrow-container"
+  >
+    <span
+      className="card__arrow"
+      onClick={[Function]}
+    />
+  </div>
 </div>
 `;
 
@@ -32,18 +37,23 @@ exports[`Card should be rendered if it has documentSize prop 1`] = `
   }
 >
   <p
-    className="card-title"
+    className="card__title"
   >
     <a />
   </p>
-  <span
-    className="arrow"
-  />
   <div
-    className="document-btn"
+    className="card__arrow-container"
   >
     <span
-      className="document-icon"
+      className="card__arrow"
+      onClick={[Function]}
+    />
+  </div>
+  <div
+    className="card__document-btn"
+  >
+    <span
+      className="card__document-icon"
     />
     <span>
       PDF(
