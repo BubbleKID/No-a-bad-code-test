@@ -1,4 +1,6 @@
-//variables
+@import '../../styles/mixin'
+
+// variables
 $border-color: #d1d1d1
 $font-color: #424242
 $border-color-hover: #00ac88
@@ -20,6 +22,8 @@ $featured-bg-100: #00a4c7
     font-weight: 700
     font-size: 16px
     padding: 50px 20px
+    @include small
+        padding: 20px
     border: 1px solid $border-color
     color: $font-color
     margin: 20px
@@ -41,6 +45,8 @@ $featured-bg-100: #00a4c7
     &__arrow-container
         cursor: pointer
         position: absolute
+        height: 54px
+        width: 54px
         right: 0
         bottom: 0
     &__arrow
@@ -87,10 +93,14 @@ $featured-bg-100: #00a4c7
             cursor: pointer
             color: $featured-font-color
             font-size: 26px
+            @include small
+                font-size: 16px
     &--featured &__title a
         background: none
     &--featured &__description 
-        font-size: 14px 
+        font-size: 14px
+        @include small
+            font-size: 12px
         font-weight: 300
     &--featured &__arrow-container 
         background: $featured-arrow-bg-color

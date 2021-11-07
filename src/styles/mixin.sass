@@ -1,0 +1,19 @@
+// screen sizes
+$small-width: 524px
+$medium-width: 768px
+$large-width: 1024px
+
+@mixin small 
+  @media (max-width: #{$small-width}) 
+    @content
+
+@mixin medium
+  @media (min-width: #{$medium-width}) and (max-width: #{$large-width - 1px})
+    @content
+
+@mixin large 
+  @media (min-width: #{$large-width}) 
+    @content
+  
+
+  
