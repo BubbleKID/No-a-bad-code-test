@@ -30,3 +30,10 @@ Link : http://not-a-bad-code-test.herokuapp.com
    ```sh
    npm run dev
    ```
+### Notes
+1. Featured card has background hover animation
+2. Arrow icons have hover effect, they have click event that open the link from item data
+3. Card texts has underline animation
+4. Card border has hover effect
+5. PDF icon and text have hover effect but they don't have click event yet
+6. Featured card size is optimize for small devices
