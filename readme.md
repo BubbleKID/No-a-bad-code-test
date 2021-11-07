@@ -20,7 +20,7 @@ Link : http://not-a-bad-code-test.herokuapp.com
 ### Installation
 1. Clone the repo
    ```sha
-   git clone git@github.com:BubbleKID/No-a-bad-code-test.git
+   git clone git@github.com:BubbleKID/Not-a-bad-code-test.git
    ```
 2. Install NPM packages
    ```sh
